@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Photography Site</title>
+        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel = "stylesheet" href = "simplelightbox-master/dist/simple-lightbox.css">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header">
+            <div class = "nav-section">
+                <div class = "brand-and-navBtn">
+                    <span class = "brand-name">
+                        RAW VISION
+                    </span>
+                    <span class = "navBtn flex">
+                        <i class = "fas fa-bars"></i>
+                    </span>
+                </div>
+
+                <!-- navigation menu -->
+                <nav class = "top-nav">
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "gallery.html" class = "active">Gallery</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                        <li><a href = "login.html">Login</a></li>
+
+                    </ul>
+                </nav>
+                <span class = "search-icon">
+                    <i class = "fas fa-search"></i>
+                </span>
+            </div>
+
+            <div class = "container about">
+                <div class = "about-content">
+                    <div class = "about-img flex">
+                        <img src = "logo.png" alt = "photographer img">
+                    </div>
+                    <h3>Photographer | Traveller</h3>
+                    <blockquote>
+                        "It takes a lot of imagination to be a good photographer. You need less imagination to be a painter because you can invent things. But in photography everything is so ordinary; it takes a lot of looking before you learn to see the extraordinary".
+                         <span><em><strong>David Bailey</strong></em></span>
+                     </blockquote>
+                </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- main -->
+        <section class = "section-three">
+            <div class = "container">
+                <div class = "gallery">
+                    <a href = "images/gallery1.jpg">
+                        <div class = "single-img">
+                            <img src = "water.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery2.jpg">
+                        <div class = "single-img">
+                            <img src = "sunset.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery3.jpg">
+                        <div class = "single-img">
+                            <img src = "city.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery4.jpg">
+                        <div class = "single-img">
+                            <img src = "northern-lights-4966913_1920.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery5.jpg">
+                        <div class = "single-img">
+                            <img src = "wolf-3022813_1920.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery6.jpg">
+                        <div class = "single-img">
+                            <img src = "night-2802639_1920.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery7.jpg">
+                        <div class = "single-img">
+                            <img src = "sea-164989_1280.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery8.jpg">
+                        <div class = "single-img">
+                            <img src = "plouzane-1758197_1920.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "images/gallery9.jpg">
+                        <div class = "single-img">
+                            <img src = "baby.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Beautiful Work</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end of main -->
+
+
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container container">
+                <div>
+                    
+                    <p><h2>Reviews</h2>
+                        <p>Amy R.<br>
+                         "Great customer service throughout covid rescheduling. Photographer was responsive and did a great job asking in advance what we were looking for. Took 2 weeks to get our pictures back- received yesterday and are thrilled with the quality shots."</p>
+                         <p> Tiffany W.<br>
+                            <Q>We were very skeptical of choosing a photographer this way but it worked out wonderfully. We had great communication and our pictures were back in two weeks (all 1800 of them). Our photographer was absolutely amazing!!! I highly suggest using them for your wedding.</Q></p>
+                        <p> Julian Key<br>
+                            <Q>From start to finish, our experience with Raw vision was efficient & budget-friendly, while still providing the freedom to choose from various artists and see their work beforehand. Our pictures and video turned out incredible. Highly recommend!</Q></p>
+                        </div>
+                        <br>
+                        <h3>Free Subscription!</h3>
+                        <p>our photos are telling unique stories through their images, and we are sharing our talent with you. You can download their images directly or request custom<br> SUBSCRIBE Now</p>
+                </div>
+                <div>
+                    <div class = "subs">
+                        <i class = "fas fa-envelope"></i>
+                        <input type = "email" id = "email" placeholder="Email Address">
+                        <button type = "submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; Copyright B RAMYA R BALIGA  FINAL PROJECT</p>
+        </footer>
+        <!-- end of footer -->
+        
+        <!-- LIGHTBOX -->
+        <script src = "simplelightbox-master/dist/simple-lightbox.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
