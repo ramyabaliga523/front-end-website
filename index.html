@@ -1,120 +1,174 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Login and Registration Form</title>
-      <link rel="stylesheet" href="main.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Photography Site</title>
+        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
         
         <!-- header -->
         <header class = "header">
-         <div class = "nav-section">
-             <div class = "brand-and-navBtn">
-                 <span class = "brand-name">
-                     Raw VISION
-                 </span>
-                 <span class = "navBtn flex">
-                     <i class = "fas fa-bars"></i>
-                 </span>
-             </div>
+            <div class = "nav-section">
+                <div class = "brand-and-navBtn">
+                    <span class = "brand-name">
+                        RAW VISION
+                    </span>
+                    <span class = "navBtn flex">
+                        <i class = "fas fa-bars"></i>
+                    </span>
+                </div>
 
-             <!-- navigation menu -->
-             <nav class = "top-nav">
-                 <ul>
-                     <li><a href = "index.html">Home</a></li>
-                     <li><a href = "gallery.html">Gallery</a></li>
-                     <li><a href = "contact.html" >Contact</a></li>
-                     <li><a href="login.html"class = "active">Login</a></li>
-                 </ul>
-             </nav>
-             <span class = "search-icon">
-                 <i class = "fas fa-search"></i>
-             </span>
-         </div>
+                <!-- navigation menu -->
+                <nav class = "top-nav">
+                    <ul>
+                        <li><a href = "index.html" class = "active">Home</a></li>
+                        <li><a href = "gallery.html">Gallery</a></li>
+                        <li><a href = "contact.html">Contact</a></li>
+                        <li><a href = "login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <span class = "search-icon">
+                    <i class = "fas fa-search"></i>
+                </span>
+            </div>
 
-         <div class = "container about">
-             <div class = "about-content">
-                 <div class = "about-img flex">
-                     <img src = "logo.png" alt = "photographer img">
-                 </div>
+            <div class = "container about">
+                <div class = "about-content">
+                    <div class = "about-img flex">
+                        <img src = "logo.png" alt = "photographer img">
+                    </div>
+                    <h3>Photographer | Traveller</h3>
+                    <blockquote>
+                        "It takes a lot of imagination to be a good photographer. You need less imagination to be a painter because you can invent things. But in photography everything is so ordinary; it takes a lot of looking before you learn to see the extraordinary".
+                        <h1><span><em><strong>David Bailey</strong></em></span></h1> 
+                     </blockquote>
+                </div>
+
+                <div class = "social-icons">
+                    <ul>
+                        <li>
+                            <a href = "https://www.facebook.com/ramya.baliga.359"><img src="facebook-logo-493.png">
+                        </li>
+                        <li>
+                            <a href = "https://github.com/ramyabaliga523"><img src="512x512-logo-27148.png">
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/ramya___523/ "><img src="logo-instagram-png-2430.png">
+                        </li>
+                        <li>
+                            <a href = "https://www.linkedin.com/in/b-ramya-r-baliga-710716226"><img src="linkedin-logo-png-1837.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
 
-      <div class="wrapper">
-         <div class="title-text">
-            <div class="title login">
-               Login Form
-            </div>
-            <div class="title signup">
-               Signup Form
-            </div>
-         </div>
-         <div class="form-container">
-            <div class="slide-controls">
-               <input type="radio" name="slide" id="login" checked>
-               <input type="radio" name="slide" id="signup">
-               <label for="login" class="slide login">Login</label>
-               <label for="signup" class="slide signup">Signup</label>
-               <div class="slider-tab"></div>
-            </div>
-            <div class="form-inner">
-               <form action="#" class="login">
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
-                  </div>
-                  <div class="pass-link">
-                     <a href="#">Forgot password?</a>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Login">
-                  </div>
-                  <div class="signup-link">
-                     Not a member? <a href="">Signup now</a>
-                  </div>
-               </form>
-               <form action="#" class="signup">
-                  <div class="field">
-                     <input type="text" placeholder="Email Address" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Password" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Confirm password" required>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Signup">
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-      <script>
-         const loginText = document.querySelector(".title-text .login");
-         const loginForm = document.querySelector("form.login");
-         const loginBtn = document.querySelector("label.login");
-         const signupBtn = document.querySelector("label.signup");
-         const signupLink = document.querySelector("form .signup-link a");
-         signupBtn.onclick = (()=>{
-           loginForm.style.marginLeft = "-50%";
-           loginText.style.marginLeft = "-50%";
-         });
-         loginBtn.onclick = (()=>{
-           loginForm.style.marginLeft = "0%";
-           loginText.style.marginLeft = "0%";
-         });
-         signupLink.onclick = (()=>{
-           signupBtn.click();
-           return false;
-         });
-      </script>
-   </body>
-</html>
-                                   
+
                 
+
+        </header>
+        <!-- end of header -->
+
+        <!-- main -->
+        <section class = "section-one">
+            <div class = "container">
+                <div class = "sec-one-left">
+                    <!-- image here -->
+                    <div>
+                        <h3>ABOUT US</h3>
+                        <p>RAw Vision is represented by a dedicated and talented team of individuals with professional working experience in photography. The core team consists of the founder of Raw vision Sherman Mcclain,Rene Thomas , and Editor in Chief,Jasper Knox .</p>
+                        <a href = "#" class = "btn">view all</a>
+                    </div>
+                </div>
+
+                <div class = "sec-one-right">
+                    <div class = "work-content">
+                        <h3>AMAZING TEAM WORK WITH PROFESSIONAL PHOTOGRAPHER</h3>
+                        <p>Sherman Mcclain and Rene Thomas founded Raw Vision in 2004. We've had the privilege of photographing some of the most incredible people in collaboration with photographers Jasper Knox and Zadie Manning. Our reputation has grown by word of mouth, and we are becoming more well-known with each challenge.
+                            We've worked with modelling agencies, event organizers, performers, schools, individual models, and private events like weddings and parties along our journey.</p>
+                        <a href = "#" class = "btn">view all</a>
+                    </div>
+                    <div class = "work-imgs">
+                        <div class = "work-img-1">
+                            <!--image here-->
+                        </div>
+                        <div class = "work-img-2">
+                            <!-- image here -->
+                        </div>
+                    </div>
+                    <h3>"Taking an image, freezing a moment, reveals how rich reality truly is."</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class = "section-two">
+            <div class = "container">
+                <h2>FOLLOW ON INSTAGRAM</h2>
+                <span>@RAWVISION_photographer</span>
+                <div class = "insta-imgs">
+                    <div>
+                        <img src = "wedding dress.jpg">
+                        <div class = "icon-overlay flex">
+                            <i class = "fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src = "cherry blosaam.jpg">
+                        <div class = "icon-overlay flex">
+                            <i class = "fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src = "dream.jpg">
+                        <div class = "icon-overlay flex">
+                            <i class = "fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src = "girl.jpg">
+                        <div class = "icon-overlay flex">
+                            <i class = "fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of main -->
+
+
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container container">
+                <div>
+                    <h2>Reviews</h2>
+                    <p>Amy R.<br>
+                     "Great customer service throughout covid rescheduling. Photographer was responsive and did a great job asking in advance what we were looking for. Took 2 weeks to get our pictures back- received yesterday and are thrilled with the quality shots."</p>
+                     <p> Tiffany W.<br>
+                        <Q>We were very skeptical of choosing a photographer this way but it worked out wonderfully. We had great communication and our pictures were back in two weeks (all 1800 of them). Our photographer was absolutely amazing!!! I highly suggest using them for your wedding.</Q></p>
+                    <p> Julian Key<br>
+                        <Q>From start to finish, our experience with Raw vision was efficient & budget-friendly, while still providing the freedom to choose from various artists and see their work beforehand. Our pictures and video turned out incredible. Highly recommend!</Q></p>
+                    </div><br>
+                    <h3>Free Subscription!</h3>
+                    <p>our photos are telling unique stories through their images, and we are sharing our talent with you. You can download their images directly or request custom<br> SUBSCRIBE Now</p>
+
+                    <div class = "subs">
+                        <i class = "fas fa-envelope"></i>
+                        <input type = "email" id = "email" placeholder="Email Address">
+                        <button type = "submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; Copyright B RAMYA R BALIGA  FINAL PROJECT
+
+            </p>
+        </footer>
+        <!-- end of footer -->
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
